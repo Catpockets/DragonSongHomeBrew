@@ -1,0 +1,48 @@
+/* Flexbox Styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  form > div {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    font-weight: bold;
+    width: 160px;  /* Set to desired width */
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 125px;  /* Set to desired width */
+    height: 30px; /* Set to desired height */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Add space between the boxes */
+  }
+  
+  /* Dropdown issue */
+  select {
+    position: relative;
+    z-index: 0;
+    width: 125px;  /* Set to desired width */
+    height: 30px; /* Set to desired height */
+  }
+  
+  @media (max-width: 800px) {
+    form > div {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    form > div {
+      flex: 1 1 calc(100% - 20px);
+    }
+  }
+  

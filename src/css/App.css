@@ -1,0 +1,10 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.routes {
+  margin-top: calc(100% - 60px); /* 100% is the full height, and 60px is the navbar height */
+}
